@@ -38,3 +38,15 @@ push the changed commit in th main branch to remote. Tracks the remite branch
 git push
 ```
 After tracking remote branch only this command is required to push changes to remote
+
+## Branch
+There can be other branch than main branch. These branches allow developer to test new features or fix bugs without affecting the original code. Once feature is developed or bug is fixed it can be merged with the main branch.
+ 
+```
+git branch [branch-name]
+```
+creates a new branch with the name [branch-name]
+```
+git branch [branch-name]
+```
+switches to the branch [branch-name].  
