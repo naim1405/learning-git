@@ -50,6 +50,10 @@ creates a new branch with the name [branch-name]
 git branch [branch-name]
 ```
 switches to the branch [branch-name].  
+```
+git push origin [branch-name]
+```
+Pushes the newly created branch to github. Wihout it this branch will not show up in github.
 
 ### Merging
 ```
