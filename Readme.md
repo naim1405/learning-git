@@ -55,6 +55,11 @@ git push origin [branch-name]
 ```
 Pushes the newly created branch to github. Wihout it this branch will not show up in github.
 
+When pushing to remote repository useing ```git push``` only the main branch is pushed to the remote repo. To push all commits of all the branches to the remote repository the following command can be used.
+```
+git push --all origin
+```
+
 ### Merging
 ```
 git merge [branch-name] -m [message]
