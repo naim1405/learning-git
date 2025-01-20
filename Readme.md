@@ -26,4 +26,7 @@ git branch -m Main
 ```
 renames the current branch to Main. Required for github.
 
-
+```
+git remote add origin [github link]
+```
+add remote repository
