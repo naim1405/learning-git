@@ -30,3 +30,11 @@ renames the current branch to Main. Required for github.
 git remote add origin [github link]
 ```
 add remote repository
+```
+git push -u origin main
+```
+push the changed commit in th main branch to remote. Tracks the remite branch
+```
+git push
+```
+After tracking remote branch only this command is required to push changes to remote
