@@ -50,3 +50,21 @@ creates a new branch with the name [branch-name]
 git branch [branch-name]
 ```
 switches to the branch [branch-name].  
+
+### Merging
+```
+git merge [branch-name] -m [message]
+```
+This command merges the commit made in [branch-name] with the current working branch without modifying the [branch-name].
+If branch1 and branch2 both have some commits, then the following command while working on branch2
+```
+git merge branch1 -m "merging branch1 with branch2"
+```
+will merger the commits from branch 1 with merge2. It will not change the branch1 branch. Only the branch2 will be changed.  
+  
+To merge the current branch to the main without changing the current branch:
+```
+git checkout main
+git merge [branch-name] -m "merging branch"
+```
+
