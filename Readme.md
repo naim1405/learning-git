@@ -21,4 +21,9 @@ git commit -m "message"
 ```
 commits the staged files with message
 
+```
+git branch -m Main
+```
+renames the current branch to Main. Required for github.
+
 
