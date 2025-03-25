@@ -1,79 +1,77 @@
 # Learning Git
-I'll learn git and add what I learned here.
+
 
 ### Basic commands
+- initialize git in a folder
 ```
 git init
 ```
-above command initialize git in a folder
+- stage all the files in the current directory
 ```
 git add .
 ```
-stage all the files in the current directory
 
+- stage the specified file
 ```
 git add filename
 ```
-stage the specified file
 
+- commits the staged files with message
 ```
 git commit -m "message"
 ```
-commits the staged files with message
 
+- renames the current branch to Main. Required for github.
 ```
 git branch -m Main
 ```
-renames the current branch to Main. Required for github.
 
+- add remote repository
 ```
 git remote add origin [github link]
 ```
-add remote repository
+
+- push the changed commit in th main branch to remote. Tracks the remote branch
 ```
 git push -u origin main
 ```
-push the changed commit in th main branch to remote. Tracks the remite branch
+- After tracking remote branch only this command is required to push changes to remote
 ```
 git push
 ```
-After tracking remote branch only this command is required to push changes to remote
+
 
 ## Branch
 There can be other branch than main branch. These branches allow developer to test new features or fix bugs without affecting the original code. Once feature is developed or bug is fixed it can be merged with the main branch.
  
+- Swtich to branch witn [branch-name], if doesn't exist create a new branch.
 ```
 git branch [branch-name]
 ```
-creates a new branch with the name [branch-name]
-```
-git branch [branch-name]
-```
-switches to the branch [branch-name].  
+
+- Pushes the newly created branch to github. Wihout it this branch will not show up in github.
 ```
 git push origin [branch-name]
 ```
-Pushes the newly created branch to github. Wihout it this branch will not show up in github.
 
-When pushing to remote repository useing ```git push``` only the main branch is pushed to the remote repo. To push all commits of all the branches to the remote repository the following command can be used.
+- When pushing to remote repository useing ```git push``` only the main branch is pushed to the remote repo. To push all commits of all the branches to the remote repository the following command can be used.
 ```
 git push --all origin
 ```
 
 ### Merging
+- This command merges the commit made in [branch-name] with the current working branch without modifying the [branch-name].
 ```
 git merge [branch-name] -m [message]
 ```
-This command merges the commit made in [branch-name] with the current working branch without modifying the [branch-name].
-If branch1 and branch2 both have some commits, then the following command while working on branch2
+- The following command while working on branch2 will merge the commits from branch 1 with merge2. It will not change the branch1. Only the branch2 will be changed.  
 ```
 git merge branch1 -m "merging branch1 with branch2"
 ```
-will merger the commits from branch 1 with merge2. It will not change the branch1 branch. Only the branch2 will be changed.  
+
   
-To merge the current branch to the main without changing the current branch:
+- To merge the current branch to the main without changing the current branch:
 ```
 git checkout main
 git merge [branch-name] -m "merging branch"
 ```
-
